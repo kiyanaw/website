@@ -18,4 +18,3 @@ git push origin stable
 ```
 
 The push to Netlify is triggered by GitHub Actions. 
-
