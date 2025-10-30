@@ -31,6 +31,12 @@ const TopNav = () => {
             >
               Projects
             </Link>
+            {/* <Link
+              href="/services"
+              className="text-base font-medium text-primary-600 hover:text-primary-900"
+            >
+              Services
+            </Link> */}
             <Link
               href="/library"
               className="text-base font-medium text-primary-600 hover:text-primary-900"
@@ -44,11 +50,23 @@ const TopNav = () => {
               Blog
             </Link>
             <Link
-              href="/#about"
+              href="https://docs.kiyanaw.net"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-base font-medium text-primary-600 hover:text-primary-900"
             >
-              About
+              Docs
             </Link>
+            <Button
+              as={Link}
+              href="mailto:contact@kiyanaw.net?subject=Contact Inquiry"
+              color="primary"
+              variant="solid"
+              size="sm"
+              className="ml-4"
+            >
+              Contact
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -98,6 +116,13 @@ const TopNav = () => {
           >
             Projects
           </Link>
+          {/* <Link
+            href="/services"
+            className="block rounded-md px-3 py-2 text-base font-medium text-primary-600 hover:bg-gray-50 hover:text-primary-900"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Services
+          </Link> */}
           <Link
             href="/library"
             className="block rounded-md px-3 py-2 text-base font-medium text-primary-600 hover:bg-gray-50 hover:text-primary-900"
@@ -113,11 +138,20 @@ const TopNav = () => {
             Blog
           </Link>
           <Link
-            href="/#about"
+            href="https://docs.kiyanaw.net"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block rounded-md px-3 py-2 text-base font-medium text-primary-600 hover:bg-gray-50 hover:text-primary-900"
             onClick={() => setIsMenuOpen(false)}
           >
-            About
+            Docs
+          </Link>
+          <Link
+            href="mailto:contact@kiyanaw.net?subject=Contact Inquiry"
+            className="block rounded-md bg-primary-600 px-3 py-2 text-base font-medium text-white hover:bg-primary-700"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contact
           </Link>
         </div>
       </div>
