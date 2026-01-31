@@ -10,7 +10,7 @@ const SupportUs = () => (
           Support Us!
         </h2>
         <div className="text-base text-emerald-700">
-          <strong>All our projects are free to use</strong>! . Every dollar
+          <strong>All our projects are free to use</strong>! Every dollar
           donated goes towards the development of language projects. <br />
           We appreciate your support 🙏
         </div>

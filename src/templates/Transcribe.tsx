@@ -19,13 +19,15 @@ const Transcribe = () => (
       description={AppConfig.description}
     />
     <VideoHero
-      title="kiyânaw Transcribe"
+      title="kiyânaw"
+      titleLine2="Transcribe"
       subtitle="Free online <u>collaborative</u> transcription software designed for Indigenous languages."
       videoSrc="/assets/videos/transcribe-bg-video.mp4"
       screenshotSrc="/assets/images/kiyanaw-transcribe-header.png"
       screenshotAlt="kiyânaw Transcribe interface screenshot"
       ctaText="Try it now →"
       ctaLink="https://bundle.kiyanaw.net/"
+      badge="PUBLIC BETA"
     />
 
     <PublicBeta />
@@ -158,12 +160,6 @@ const Transcribe = () => (
           end
         />
       </Timeline>
-
-      {/* <div className="text-center">
-        <Link target="_blank" href="https://bundle.kiyanaw.net/">
-          <Button>{`Try it out now →`}</Button>
-        </Link>
-      </div> */}
     </Section>
 
     <SupportUs />

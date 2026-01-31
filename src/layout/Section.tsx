@@ -27,7 +27,10 @@ const Section = (props: ISectionProps) => (
           </h2>
         )}
         {props.description && (
-          <div className="mt-4 text-xl md:px-20">{props.description}</div>
+          <div
+            className="mt-4 text-xl md:px-20 [&_a]:text-primary-500 [&_a]:underline [&_a]:hover:text-primary-600"
+            dangerouslySetInnerHTML={{ __html: props.description }}
+          />
         )}
       </div>
     )}

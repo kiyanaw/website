@@ -2,7 +2,13 @@ import Link from 'next/link';
 
 import { Button } from '@/button/Button';
 
-const PublicBeta = () => (
+type PublicBetaProps = {
+  ctaLink?: string;
+};
+
+const PublicBeta = ({
+  ctaLink = 'https://bundle.kiyanaw.net/',
+}: PublicBetaProps) => (
   <div className="w-full bg-blue-50">
     <div className="mx-auto max-w-screen-lg px-3 py-8">
       <div className="text-left">
@@ -23,7 +29,7 @@ const PublicBeta = () => (
           .
         </div>
         <div className="text-center">
-          <Link target="_blank" href="https://bundle.kiyanaw.net/">
+          <Link target="_blank" href={ctaLink}>
             <Button>{`Try it out now →`}</Button>
           </Link>
         </div>

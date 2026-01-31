@@ -1,0 +1,6 @@
+---
+title: "The Problem with 'Immersion'"
+date: "2026-01-05"
+excerpt: "Today we're extremely excited to be launching the public beta of our first language app, kiyânaw Transcribe."
+author: "Aaron Fay"
+---

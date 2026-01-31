@@ -1,31 +1,38 @@
-import { Button } from '@/button/Button';
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
 import { Section } from '@/layout/Section';
-import { TopNav } from '@/layout/TopNav';
 
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Footer } from './Footer';
 import { Milestone } from './Milestone';
+import { PublicBeta } from './PublicBeta';
 import { SupportUs } from './SupportUs';
 import { Timeline } from './Timeline';
-import { UnderDevelopment } from './UnderDevelopment';
+import { VideoHero } from './VideoHero';
 
 const Database = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
-    <TopNav></TopNav>
+    {/* <TopNav></TopNav> */}
 
-    <UnderDevelopment />
+    <VideoHero
+      title="Language"
+      titleLine2="Database"
+      subtitle="Learner-driven deep context exploration within real-world language."
+      videoSrc="/assets/videos/database-bg-video.mp4"
+      screenshotSrc="/assets/images/language-database.png"
+      screenshotAlt="kiyânaw Database interface screenshot"
+      ctaText="Try it now →"
+      ctaLink="https://bundle.kiyanaw.net/database"
+      badge="NOW LIVE"
+    />
+
+    <PublicBeta ctaLink="https://bundle.kiyanaw.net/database" />
 
     <Section
       title="kiyânaw Database"
-      description="kiyânaw Database provides learner-driven deep context exploration within real-world language. By indexing content from transcriptions and other published materials, learners are able to search for words, partial words, or phrases that support their current learning context. Initially being development for nêhiyawêwin (Plains Cree Y-dialect), kiyânaw Database holds the vision of being able to support learners of any Indigenous language."
+      description="kiyânaw Database provides learner-driven deep context exploration within real-world language. By indexing content from transcriptions and other published materials, learners are able to search for words, partial words, or phrases that support their current learning context. Initially developed for nêhiyawêwin (Plains Cree Y-dialect), kiyânaw Database <a href='https://docs.kiyanaw.net/language-database' target='_blank'>currently supports several Indigenous languages</a>, with additional support added weekly."
     >
-      <div className="text-center">
-        <Button disabled>{`Coming Soon...`}</Button>
-      </div>
-
       <VerticalFeatureRow
         title="High frequency words"
         description="When analysis (spell-checking) is available for a language, advanced indexing becomes possible, allowing us to keep a list of high-frequency words. Studying these lists can help to speed the advance our comprehension and fluency."
@@ -68,13 +75,13 @@ const Database = () => (
         <Milestone
           time="1.0"
           title="General availability"
-          description="Multi-source integration (Bloomfield, CLN), compound search functionality, english search."
+          description="Multi-source integration (Website, PDF), english search."
           right
         />
         <Milestone
           time="1.1"
-          title="Multi-language"
-          description="Additional language support."
+          title="Advanced Search"
+          description="Support for compound search options, Public Figure support."
           end
         />
       </Timeline>

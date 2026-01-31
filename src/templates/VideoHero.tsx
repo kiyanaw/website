@@ -5,21 +5,26 @@ import { Section } from '../layout/Section';
 
 interface VideoHeroProps {
   title: string;
+  titleLine2?: string;
   subtitle: string;
   videoSrc: string;
   screenshotSrc: string;
   screenshotAlt: string;
   ctaText?: string;
   ctaLink?: string;
+  badge?: string;
 }
 
 const VideoHero = ({
+  title,
+  titleLine2,
   subtitle,
   videoSrc,
   screenshotSrc,
   screenshotAlt,
   ctaText,
   ctaLink,
+  badge,
 }: VideoHeroProps) => (
   <div>
     <Background color="bg-gray-100">
@@ -52,21 +57,24 @@ const VideoHero = ({
                       textShadow: '1px 1px 3px rgba(0,0,0,0.4)',
                     }}
                   >
-                    kiyânaw
+                    {title}
                   </span>
-                  <span
-                    className="block"
-                    style={{
-                      textShadow: '1px 1px 3px rgba(0,0,0,0.4)',
-                    }}
-                  >
-                    Transcribe
-                  </span>
+                  {titleLine2 && (
+                    <span
+                      className="block"
+                      style={{
+                        textShadow: '1px 1px 3px rgba(0,0,0,0.4)',
+                      }}
+                    >
+                      {titleLine2}
+                    </span>
+                  )}
                 </h1>
-                {/* Public beta badge hanging off header */}
-                <div className="absolute -right-4 -top-3 rounded-full bg-blue-500 px-3 py-1 text-xs font-semibold text-white shadow-lg">
-                  PUBLIC BETA
-                </div>
+                {badge && (
+                  <div className="absolute -right-4 -top-3 rounded-full bg-blue-500 px-3 py-1 text-xs font-semibold text-white shadow-lg">
+                    {badge}
+                  </div>
+                )}
               </div>
               <div
                 className="mt-6 text-xl text-white"
@@ -90,17 +98,11 @@ const VideoHero = ({
           </div>
         </Section>
         {/* Oversized screenshot overlay anchored at grid seam */}
-        <div className="pointer-events-none absolute inset-y-0 left-[44%] hidden items-center lg:flex">
+        <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden items-center lg:flex">
           <img
             src={screenshotSrc}
             alt={screenshotAlt}
-            className="block select-none"
-            style={{
-              width: 'min(1200px, 55vw)',
-              height: 'auto',
-              maxHeight: '500px',
-              maxWidth: '800px',
-            }}
+            className="block max-h-[500px] w-auto max-w-[50vw] select-none object-contain"
           />
         </div>
       </div>
