@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { Button } from '@/button/Button';
+import { YouTubeEmbed } from '@/components/YouTubeEmbed';
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
 import { Section } from '@/layout/Section';
 
@@ -8,6 +9,7 @@ import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Footer } from './Footer';
 import { Milestone } from './Milestone';
+import { OpenSourceBanner } from './OpenSourceBanner';
 import { PublicBeta } from './PublicBeta';
 import { SupportUs } from './SupportUs';
 import { Timeline } from './Timeline';
@@ -31,14 +33,34 @@ const Transcribe = () => (
 
     <PublicBeta />
 
+    <Section yPadding="pt-6 my-6 mb-12">
+      <YouTubeEmbed
+        videoId="58SPAZMQ0Qs"
+        title="kiyânaw Transcribe Tutorial Video"
+      />
+    </Section>
+
+    <OpenSourceBanner />
+
     <Section>
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-gray-900">Features</h2>
+        <h1 className="text-4xl font-bold text-gray-900">FEATURES</h1>
       </div>
 
       <VerticalFeatureRow
+        title="Language-Agnostic"
+        description="We add spell-check support for Indigenous languages continually. As <a href='https://docs.kiyanaw.net/transcribe-features/spell-check' target='_blank'>transducers</a> (spell-checkers) become available for various languages, we are able to add support for that language to our platform easily. But even if your language isn't supported yet, most of our <a href='https://docs.kiyanaw.net/transcribe-features', target='_blank'>features</a> will still work."
+        image="/assets/images/language-selector.png"
+        imageAlt="Support for various media formats"
+        // target="https://bundle.kiyanaw.net/transcribe-edit/1ead8e60"
+        targetText="View transcription"
+        reverse
+        blank
+      />
+
+      <VerticalFeatureRow
         title="Online Collaboration"
-        description="kiyânaw Transcribe allows for multiple users working in the same transcription simultaneously and will give visual cues when others are editing nearby content, as well as conflict resolution options when editing the same region."
+        description="Work on the same transcription <a href='https://docs.kiyanaw.net/transcribe-features/sharing' target='_blank'>simultaneously with friends or other language learners</a>. Receive visual cues when others are editing nearby content, as well as conflict resolution options when editing the same region."
         image="/assets/images/transcribe-conflict.png"
         imageAlt="Collaborative transcribing"
         // target="https://bundle.kiyanaw.net/transcribe-edit/1ead8e60"
@@ -47,7 +69,7 @@ const Transcribe = () => (
       />
       <VerticalFeatureRow
         title="Audio & Video Support"
-        description="Currently MP3 and MP4 support are available for transcription media formats, with additional formats planned soon."
+        description="Expanding support for various media formats, audio and video including most mobile formats. Upload directly from your phone and start transcribing."
         image="/assets/images/transcribe-video.png"
         imageAlt="Support for various media formats"
         // target="https://bundle.kiyanaw.net/transcribe-edit/1ead8e60"
@@ -57,7 +79,7 @@ const Transcribe = () => (
       />
       <VerticalFeatureRow
         title="Deep Linking"
-        description="Clicking on a Region or Issue will result in the URL updating to that item's location, allowing users to share the URL with others to gain support on problem areas easily."
+        description="Clicking on a Region or Issue will result in <a href='https://docs.kiyanaw.net/transcribe-features/regions#linking-to-a-region' target='_blank'>the URL updating to that item's location</a>, allowing users to share the URL with others to gain support on problem areas easily."
         image="/assets/images/transcribe-share.png"
         imageAlt="Deep link to specific regions"
         // target="https://bundle.kiyanaw.net/transcribe-edit/1ead8e60/wavesurfer_0pm4l1hk4pg"
@@ -66,7 +88,7 @@ const Transcribe = () => (
       />
       <VerticalFeatureRow
         title="Issue Flagging"
-        description="As users encounter problem words or areas within a transcription, those words can be flagged as problematic for follow-up later on, and will be visually marked for easy identification."
+        description="As users encounter problem words or areas within a transcription, <a href='https://docs.kiyanaw.net/transcribe-features/issues' target='_blank'>those words can be flagged as problematic for follow-up later on</a>, and will be visually marked for easy identification."
         image="/assets/images/transcribe-issues.png"
         imageAlt="High frequency words"
         // target="https://bundle.kiyanaw.net/transcribe-edit/73150c90"
@@ -76,7 +98,7 @@ const Transcribe = () => (
       />
       <VerticalFeatureRow
         title="Spell checking integration"
-        description="When analysis (spell-checking) is available for a language, advanced indexing becomes possible, allowing us to keep a list of high-frequency words. Studying these lists can help to speed the advance our comprehension and fluency."
+        description="When <a href='http://localhost:3001/transcribe-features/spell-check' target='_blank'>analysis (spell-checking) is available</a> for a language, <a href='http://localhost:3001/language-database' target='_blank'>advanced indexing becomes possible</a>, allowing us to keep a list of high-frequency words. Studying these lists can help to speed the advance our comprehension and fluency."
         image="/assets/images/transcribe-spelling.png"
         imageAlt="High frequency words"
         // target="https://bundle.kiyanaw.net/transcribe-edit/1ead8e60"

@@ -65,7 +65,10 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
             </span>
           )}
         </div>
-        <div className="mt-6 py-6 text-xl leading-9">{props.description}</div>
+        <div
+          className="mt-6 py-6 text-xl leading-9 [&_a]:text-primary-500 [&_a]:underline [&_a]:hover:text-primary-600"
+          dangerouslySetInnerHTML={{ __html: props.description }}
+        />
         {props.target && (
           <Link target={target} href={{ pathname: props.target }}>
             <Button>{`${buttonText} →`}</Button>

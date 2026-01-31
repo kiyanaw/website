@@ -61,7 +61,7 @@ const VerticalFeatures = () => (
       <VerticalFeatureRow
         title="kiyânaw Database"
         description="The kiyânaw Database is a searchable repository of inflected words and phrases gathered from transcriptions and elsewhere online."
-        image="/assets/images/kiyanaw-database.png"
+        image="/assets/images/language-database.png"
         imageAlt="Searchable index of attested language from transcriptions and other sources."
         target="/database"
         targetText="Learn more"

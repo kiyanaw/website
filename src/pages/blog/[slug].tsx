@@ -1,4 +1,4 @@
-import { format } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote';
@@ -7,6 +7,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 
+import { Callout } from '@/components/Callout';
 import { Meta } from '@/layout/Meta';
 import { Section } from '@/layout/Section';
 import { TopNav } from '@/layout/TopNav';
@@ -61,7 +62,7 @@ const BlogPost = ({ post, relatedPosts }: BlogPostProps) => {
               <span className="font-medium">{meta.author}</span>
               <span>•</span>
               <time dateTime={meta.date}>
-                {format(new Date(meta.date), 'MMMM d, yyyy')}
+                {format(parseISO(meta.date), 'MMMM d, yyyy')}
               </time>
             </div>
 
@@ -78,7 +79,7 @@ const BlogPost = ({ post, relatedPosts }: BlogPostProps) => {
 
           {/* Article Content */}
           <article className="prose-primary prose prose-lg mx-auto max-w-none">
-            <MDXRemote {...mdxSource} />
+            <MDXRemote {...mdxSource} components={{ Callout }} />
           </article>
 
           {/* Related Posts */}
@@ -101,7 +102,7 @@ const BlogPost = ({ post, relatedPosts }: BlogPostProps) => {
                       {relatedPost.excerpt}
                     </p>
                     <div className="mt-3 text-sm text-gray-500">
-                      {format(new Date(relatedPost.date), 'MMM d, yyyy')}
+                      {format(parseISO(relatedPost.date), 'MMM d, yyyy')}
                     </div>
                   </Link>
                 ))}
