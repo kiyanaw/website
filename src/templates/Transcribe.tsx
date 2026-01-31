@@ -1,6 +1,3 @@
-import Link from 'next/link';
-
-import { Button } from '@/button/Button';
 import { YouTubeEmbed } from '@/components/YouTubeEmbed';
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
 import { Section } from '@/layout/Section';
@@ -33,12 +30,15 @@ const Transcribe = () => (
 
     <PublicBeta />
 
-    <Section yPadding="pt-6 my-6 mb-12">
-      <YouTubeEmbed
-        videoId="58SPAZMQ0Qs"
-        title="kiyânaw Transcribe Tutorial Video"
-      />
-    </Section>
+    <div className="bg-gradient-to-b from-gray-50 to-white py-16">
+      <div className="mx-auto max-w-screen-lg px-3">
+        <YouTubeEmbed
+          videoId="58SPAZMQ0Qs"
+          title="See it in Action"
+          description="Watch a quick walkthrough of kiyânaw Transcribe and learn how to get started with collaborative transcription."
+        />
+      </div>
+    </div>
 
     <OpenSourceBanner />
 
@@ -159,11 +159,11 @@ const Transcribe = () => (
         />
       </Timeline>
 
-      <div className="text-center">
+      {/* <div className="text-center">
         <Link target="_blank" href="https://bundle.kiyanaw.net/">
           <Button>{`Try it out now →`}</Button>
         </Link>
-      </div>
+      </div> */}
     </Section>
 
     <SupportUs />
