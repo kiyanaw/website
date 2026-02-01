@@ -18,38 +18,38 @@ const MobileApp = () => (
     <UnderDevelopment />
 
     <Section
-      title="kiyânaw App"
-      description="kiyânaw is a platform for building community-driven language bundles. Any learner with a phone can now collect words and phrases and contribute them to the community-moderated pool. New languages or dialects can added easily."
+      title="kiyânaw Mentor"
+      description="kiyânaw Mentor is a platform for building community-driven language bundles. Like MAP (Mentor-Apprentice Program) but available to any learner, a Mentor with a phone can answer any Learner question and contribute to the community language pool for any region or dialect."
     >
       <VerticalFeatureRow
         title="Phrase oriented"
-        description="The kiyânaw App seeks to fill that 'intermediate' gap by focusing on the collection of phrases with audio. Phrase-based learning, especially self-directed, allows learners to incorporate useful language into their day-to-day, slowly building up towards fluency."
+        description="The kiyânaw App seeks to fill that 'intermediate gap' by allowing for the collection of phrases with audio. Phrase-based learning, especially self-directed, allows learners to incorporate useful language into their day-to-day, slowly building up towards fluency."
         image="/assets/images/app-phrase-oriented.png"
         imageAlt="Phrase-oriented learning"
       />
       <VerticalFeatureRow
         title="Learner driven"
-        description="Learners can request answers from language keepers, contributing to the overall pool of phrases. Learner questions initially go into a question pool, hidden from the general list of responses, and can be elevated into the public pool of responses if they do not exist. Questions that have already been answered will be linked to existing answers to reduce duplication."
+        description="Learners can ask questions from Mentors and Language Keepers, answers to which contribute to the overall pool of phrases. Learner questions initially go into a private pool, only available to Mentors. Reponses (with audio) that become public contribute to the overall language bundle for future learners."
         image="/assets/images/app-questions.png"
         imageAlt="Learners can submit questions"
         reverse
       />
       <VerticalFeatureRow
         title="Your custom playlist"
-        description="At the heart of the kiyânaw app is your playlist. Add audio from phrases that have been contributed to the app to your playlist, and rotate in new phrases to fit your learning curve. Missing a phrase? Submit a new question for the specific sentence you are looking for."
+        description="At the heart of the kiyânaw Mentor app is your playlist. Add audio from responses that have been contributed to the app to your playlist, and rotate in new phrases to fit your learning curve. Missing a phrase? Submit a new question for the specific sentence you are looking for."
         image="/assets/images/app-playlist.png"
         imageAlt="Build a personal playlist of phrases"
       />
       <VerticalFeatureRow
         title="Searchable"
-        description="Learners can request answers from language keepers, contributing to the overall pool of phrases. Learner questions initially go into a question pool, hidden from the general list of responses, and can be elevated into the public pool of responses if they do not exist. Questions that have already been answered will be linked to existing answers to reduce duplication."
+        description="Learners can request answers from Language Keepers, contributing to the overall pool of phrases. Learner questions initially go into a question pool, hidden from the general list of responses, and can be elevated into the public pool of responses if they do not exist. Questions that have already been answered will be linked to existing answers to reduce duplication."
         image="/assets/images/app-searchable.png"
         imageAlt="Search the phrase pool"
         reverse
       />
       <VerticalFeatureRow
         title="Multi-language, multi-dialect"
-        description="The kiyânaw App platform is designed to support any language or dialect. Received funding for a new app? Download the list of published phrases from a nearby dialect or language and spend 100% of your funding on recording audio from fluent speakers for your language or dialect."
+        description="The kiyânaw Platform is designed to support any language or dialect. Received funding for a new app? Download the list of published phrases from a nearby dialect or language and spend 100% of your funding on recording audio from fluent speakers for your region or community."
         image="/assets/images/app-multi-dialect.png"
         imageAlt="Platform designed for any language or dialect"
       />
@@ -62,14 +62,15 @@ const MobileApp = () => (
       <Timeline>
         <Milestone
           time="1.0-alpha"
-          title="Prototype"
-          description="Question submission and promotion, search, browse, playlist, favorites."
+          title="Private beta"
+          description="Internal version for early testing."
           start
+          complete
         />
         <Milestone
           time="1.0-beta"
-          title="Published beta"
-          description="Public beta release with support for nêhiyawêwin."
+          title="Public beta"
+          description="Public beta release, question submission and promotion, search, browse, playlist, favorites."
           right
         />
         <Milestone

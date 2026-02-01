@@ -51,7 +51,7 @@ const VerticalFeatures = () => (
       <VerticalFeatureRow
         title="kiyânaw Transcribe"
         description="Transcription is a powerful tool in our language-learning toolkit. kiyânaw Transcribe is free-forever online transcription software with powerful features."
-        image="/assets/images/transcribe-video-2.png"
+        image="/assets/images/transcribe-wes.png"
         imageAlt="Online collaborative transcription software"
         reverse
         target="/transcribe"
@@ -65,15 +65,17 @@ const VerticalFeatures = () => (
         imageAlt="Searchable index of attested language from transcriptions and other sources."
         target="/database"
         targetText="Learn more"
+        badge={{ text: 'PUBLIC BETA', color: 'green' }}
       />
       <VerticalFeatureRow
-        title="kiyânaw App"
-        description="Currently in development, the kiyânaw App allows any learner to ask language questions and capture phrases & audio for any language or dialect with only their phone, helping build our language bundle for future generations."
-        image="/assets/images/kiyanaw-app.png"
+        title="kiyânaw Mentor"
+        description="Currently in private beta, the kiyânaw Mentor mobile app allows any learner to ask language questions and capture phrases & audio for any language or dialect with only their phone, helping build our language bundle for future generations."
+        image="/assets/images/kiyanaw-mentor.png"
         imageAlt="kiyânaw Mobile App"
         reverse
         target="/mobile-app"
         targetText="Learn more"
+        badge={{ text: 'PRIVATE BETA', color: 'yellow' }}
       />
       <VerticalFeatureRow
         title="Learner library"
