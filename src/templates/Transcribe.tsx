@@ -52,7 +52,7 @@ const Transcribe = () => (
       <VerticalFeatureRow
         title="Privacy First"
         description="We wrote kiyânaw Transcribe with the vision that one day various organizations and communities may want to find a way to dive into old stories and recordings of our elders. It's important to us that you feel confident that we've put your privacy first and that your data is secure. With consultation from data sovereignty practicioners we've rewritten our entire system to put <a href='https://docs.kiyanaw.net/philosophy' target='_blank'>data sovereignty and security</a> at the forefront of our system design."
-        image="/assets/images/language-selector.png"
+        image="/assets/images/transcribe-expiry.png"
         imageAlt="Support for various media formats"
         // target="https://bundle.kiyanaw.net/transcribe-edit/1ead8e60"
         targetText="View transcription"
@@ -73,7 +73,7 @@ const Transcribe = () => (
       <VerticalFeatureRow
         title="Online Collaboration"
         description="Work on the same transcription <a href='https://docs.kiyanaw.net/transcribe-features/sharing' target='_blank'>simultaneously with friends or other language learners</a>. Receive visual cues when others are editing nearby content, as well as conflict resolution options when editing the same region."
-        image="/assets/images/transcribe-expiry.png"
+        image="/assets/images/transcribe-conflict.png"
         imageAlt="Collaborative transcribing"
         // target="https://bundle.kiyanaw.net/transcribe-edit/1ead8e60"
         targetText="View transcription"
