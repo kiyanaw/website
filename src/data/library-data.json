@@ -427,6 +427,32 @@
     "created": "2023-08-25T23:09:00.000Z"
   },
   {
+    "title": "mahti aciyaw nēhiyawētãn - Let’s Speak Cree (for a while) Audio",
+    "description": "Audio recordings with LSA elder Judy Hilbert to accompany the mahti aciyaw nēhiyawētãn booklet.",
+    "language": "nêhiyawêwin",
+    "level": "Beginner",
+    "author": "Judy Hilbert, Christi Belcourt",
+    "content": ["crk"],
+    "tags": ["phrases", "culture", "bite-size"],
+    "category": "Lessons",
+    "source": "http://christibelcourt.com/cree-language-survival-phrases-resource/",
+    "type": "audio",
+    "created": "2026-04-16T16:29:00.000Z"
+  },
+  {
+    "title": "mahti aciyaw nēhiyawētãn - Let’s Speak Cree (for a while) Booklet",
+    "description": "SURVIVAL PHRASES are sentences that help a learner\nto navigate language learning while staying in the language.\nThis is especially important for learners who want to attend\nimmersion events.",
+    "language": "nêhiyawêwin",
+    "level": "Beginner",
+    "author": "Christi Belcourt, Belinda (kakiyosêw) Daniels, Randi Morin",
+    "content": ["crk"],
+    "tags": ["sro", "writing", "bite-size", "phrases"],
+    "category": "Lessons",
+    "source": "https://drive.google.com/file/d/1C4Lx36OfPR5Tu8mK7vZpMbVlDSnpqoVd/view",
+    "type": "doc",
+    "created": "2026-04-16T16:25:00.000Z"
+  },
+  {
     "title": "Cree Chatter Hour with Fawn & Dallas",
     "description": "A still-running podcast/radio program from CFWE where Fawn Wood and Dallas Waskahat talk about the language and introduce new vocabulary and phrases.",
     "language": "nêhiyawêwin",
