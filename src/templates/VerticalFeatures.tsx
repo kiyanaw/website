@@ -75,7 +75,7 @@ const VerticalFeatures = () => (
         reverse
         target="/mobile-app"
         targetText="Learn more"
-        badge={{ text: 'PRIVATE BETA', color: 'yellow' }}
+        badge={{ text: 'PUBLIC BETA', color: 'green' }}
       />
       <VerticalFeatureRow
         title="Learner library"

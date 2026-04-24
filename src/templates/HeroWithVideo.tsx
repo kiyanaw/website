@@ -22,12 +22,12 @@ const HeroWithVideo = () => (
         <Section yPadding="py-20" maxWidthClass="max-w-[1800px]">
           <div className="text-center">
             <h1 className="whitespace-pre-line text-6xl font-bold leading-hero drop-shadow-sm">
-              <span className="mb-6 text-5xl text-[#6DA0CA]">Introducing</span>
+              <span className="mb-6 text-5xl text-[#6DA0CA]">Now Anyone</span>
               {'\n'}
-              <span className="text-white">kiyânaw Transcribe</span>
+              <span className="text-white">Can Build A Language App</span>
             </h1>
             <div className="mt-4 text-xl text-white drop-shadow-sm">
-              Transcription software designed for Indigenous Languages.
+              Any language, any dialect, any community. All from your phone.
             </div>
 
             {/* Video Section */}
@@ -41,8 +41,8 @@ const HeroWithVideo = () => (
                   >
                     <iframe
                       className="h-full w-full"
-                      src="https://www.youtube.com/embed/D_AA6A0GKm0"
-                      title="kiyânaw Transcribe Introduction"
+                      src="https://www.youtube.com/embed/yJOGnoVW63c"
+                      title="kiyânaw Mentor Promo"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
@@ -59,7 +59,7 @@ const HeroWithVideo = () => (
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <a
-                href="https://bundle.kiyanaw.net/"
+                href="https://apps.apple.com/ca/app/kiy%C3%A2naw-mentor/id6758683587"
                 target="_blank"
                 className="inline-block rounded-md bg-kiyanaw-500 px-6 py-4 text-xl font-extrabold text-white hover:bg-kiyanaw-600"
               >

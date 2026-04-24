@@ -19,6 +19,7 @@ import {
 } from '@nextui-org/react';
 import { format } from 'date-fns';
 import { NextSeo } from 'next-seo';
+import { useRef } from 'react';
 
 import { categories, contents, levels, types } from '@/data/library-constants';
 import { useQueryState } from '@/lib/useQueryState';
@@ -37,9 +38,13 @@ const LibraryDataTable = () => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const isComposing = useRef(false);
+
   const handleSearchChange = (event: any) => {
-    const { value } = event.target;
-    setSearch(value);
+    if (!isComposing.current) {
+      const { value } = event.target;
+      setSearch(value);
+    }
   };
 
   const handleTypeChange = (event: any) => {
@@ -293,6 +298,13 @@ const LibraryDataTable = () => {
               size="lg"
               value={search || ''}
               onChange={handleSearchChange}
+              onCompositionStart={() => {
+                isComposing.current = true;
+              }}
+              onCompositionEnd={(e: any) => {
+                isComposing.current = false;
+                setSearch(e.target.value);
+              }}
               className="grow"
             />
             <Button

@@ -1,6 +1,5 @@
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
 import { Section } from '@/layout/Section';
-import { TopNav } from '@/layout/TopNav';
 
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
@@ -8,14 +7,25 @@ import { Footer } from './Footer';
 import { Milestone } from './Milestone';
 import { SupportUs } from './SupportUs';
 import { Timeline } from './Timeline';
-import { UnderDevelopment } from './UnderDevelopment';
+import { VideoHero } from './VideoHero';
 
 const MobileApp = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
-    <TopNav></TopNav>
+    {/* <TopNav></TopNav> */}
 
-    <UnderDevelopment />
+    <VideoHero
+      title="kiyânaw"
+      titleLine2="Mentor"
+      subtitle="Now <u>anyone</u> can build a language app.<br /><i>Any language, any dialect, any community.</i>"
+      videoSrc="/assets/videos/mentor-bg.mp4"
+      screenshotSrc="/assets/images/kiyanaw-mentor-header2.png"
+      screenshotAlt="kiyânaw Mentor interface screenshots"
+      ctaText="Get it in the App Store →"
+      ctaLink="https://apps.apple.com/ca/app/kiy%C3%A2naw-mentor/id6758683587"
+      badge="PUBLIC BETA"
+    />
+    {/* <PublicBeta /> */}
 
     <Section
       title="kiyânaw Mentor"
@@ -72,6 +82,7 @@ const MobileApp = () => (
           title="Public beta"
           description="Public beta release, question submission and promotion, search, browse, playlist, favorites."
           right
+          complete
         />
         <Milestone
           time="1.0"
