@@ -12,6 +12,10 @@ interface VideoHeroProps {
   screenshotAlt: string;
   ctaText?: string;
   ctaLink?: string;
+  ctaImage?: string;
+  ctaText2?: string;
+  ctaLink2?: string;
+  ctaImage2?: string;
   badge?: string;
 }
 
@@ -24,6 +28,10 @@ const VideoHero = ({
   screenshotAlt,
   ctaText,
   ctaLink,
+  ctaImage,
+  ctaText2,
+  ctaLink2,
+  ctaImage2,
   badge,
 }: VideoHeroProps) => (
   <div>
@@ -80,16 +88,56 @@ const VideoHero = ({
                 className="mt-6 text-xl text-white"
                 dangerouslySetInnerHTML={{ __html: subtitle }}
               ></div>
-              {ctaText && ctaLink && (
-                <div className="mt-8">
-                  <a
-                    href={ctaLink}
-                    target="_blank"
-                    className="inline-block rounded-md px-8 py-4 text-xl font-extrabold text-white hover:opacity-90"
-                    style={{ backgroundColor: '#4CAF48' }}
-                  >
-                    {ctaText}
-                  </a>
+              {ctaLink && (ctaImage || ctaText) && (
+                <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
+                  {ctaImage ? (
+                    <a
+                      href={ctaLink}
+                      target="_blank"
+                      className="inline-block transition hover:opacity-90"
+                    >
+                      <img
+                        src={ctaImage}
+                        alt={ctaText || 'Download'}
+                        className="h-14 w-auto"
+                      />
+                    </a>
+                  ) : (
+                    <a
+                      href={ctaLink}
+                      target="_blank"
+                      className="inline-block rounded-md px-8 py-4 text-xl font-extrabold text-white hover:opacity-90"
+                      style={{ backgroundColor: '#4CAF48' }}
+                    >
+                      {ctaText}
+                    </a>
+                  )}
+                  {ctaLink2 && (ctaImage2 || ctaText2) && (
+                    <>
+                      {ctaImage2 ? (
+                        <a
+                          href={ctaLink2}
+                          target="_blank"
+                          className="inline-block transition hover:opacity-90"
+                        >
+                          <img
+                            src={ctaImage2}
+                            alt={ctaText2 || 'Download'}
+                            className="h-20 w-auto"
+                          />
+                        </a>
+                      ) : (
+                        <a
+                          href={ctaLink2}
+                          target="_blank"
+                          className="inline-block rounded-md px-8 py-4 text-xl font-extrabold text-white hover:opacity-90"
+                          style={{ backgroundColor: '#4CAF48' }}
+                        >
+                          {ctaText2}
+                        </a>
+                      )}
+                    </>
+                  )}
                 </div>
               )}
             </div>

@@ -21,8 +21,12 @@ const MobileApp = () => (
       videoSrc="/assets/videos/mentor-bg.mp4"
       screenshotSrc="/assets/images/kiyanaw-mentor-header2.png"
       screenshotAlt="kiyânaw Mentor interface screenshots"
-      ctaText="Get it in the App Store →"
+      ctaText="Download on the App Store"
       ctaLink="https://apps.apple.com/ca/app/kiy%C3%A2naw-mentor/id6758683587"
+      ctaImage="/assets/images/app-store-badge.svg"
+      ctaText2="Get it on Google Play"
+      ctaLink2="https://play.google.com/store/apps/details?id=net.kiyanaw.mentor"
+      ctaImage2="/assets/images/google-play-badge.png"
       badge="PUBLIC BETA"
     />
     {/* <PublicBeta /> */}
