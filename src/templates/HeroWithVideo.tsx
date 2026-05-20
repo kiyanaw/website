@@ -57,14 +57,31 @@ const HeroWithVideo = () => (
               </div>
             </div>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <a
-                href="https://apps.apple.com/ca/app/kiy%C3%A2naw-mentor/id6758683587"
-                target="_blank"
-                className="inline-block rounded-md bg-kiyanaw-500 px-6 py-4 text-xl font-extrabold text-white hover:bg-kiyanaw-600"
-              >
-                Try it now
-              </a>
+            <div className="mt-10 flex flex-col items-center gap-4">
+              <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                <a
+                  href="https://apps.apple.com/ca/app/kiy%C3%A2naw-mentor/id6758683587"
+                  target="_blank"
+                  className="inline-block transition hover:opacity-90"
+                >
+                  <img
+                    src="/assets/images/app-store-badge.svg"
+                    alt="Download on the App Store"
+                    className="h-14 w-auto"
+                  />
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=net.kiyanaw.mentor"
+                  target="_blank"
+                  className="inline-block transition hover:opacity-90"
+                >
+                  <img
+                    src="/assets/images/google-play-badge.png"
+                    alt="Get it on Google Play"
+                    className="h-20 w-auto"
+                  />
+                </a>
+              </div>
               <a
                 href="#projects"
                 className="inline-block rounded-md border-2 border-white px-6 py-4 text-xl font-extrabold text-white hover:bg-white hover:text-gray-900"
