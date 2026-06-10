@@ -69,7 +69,7 @@ const VerticalFeatures = () => (
       />
       <VerticalFeatureRow
         title="kiyânaw Mentor"
-        description="Currently in private beta, the kiyânaw Mentor mobile app allows any learner to ask language questions and capture phrases & audio for any language or dialect with only their phone, helping build our language bundle for future generations."
+        description="Available for both Android and iOS, kiyânaw Mentor mobile app allows any learner to ask language questions and language Mentors to contribute phrases & audio for any language or dialect with only their phone, helping build your language bundle for future generations."
         image="/assets/images/kiyanaw-mentor.png"
         imageAlt="kiyânaw Mobile App"
         reverse
